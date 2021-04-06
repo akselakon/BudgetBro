@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context=".ActivityCreateBudget">
+
+	<EditText
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:inputType="textPersonName"
+			android:ems="10"
+			android:id="@+id/editMemberName"
+			app:layout_constraintEnd_toEndOf="@+id/editBugdetName"
+			app:layout_constraintStart_toStartOf="@+id/editBugdetName"
+			app:layout_constraintTop_toBottomOf="@+id/editBugdetName" android:layout_marginTop="44dp"
+			android:hint="Enter member name" app:layout_constraintHorizontal_bias="0.0"/>
+	<TextView
+			android:text="Create a new Budget"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/createBudgetTxt"
+			app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="40dp" android:textSize="22sp"
+			android:textStyle="bold"/>
+	<Button
+			android:text="Create Budget"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/btnSubmitBudget"
+			app:layout_constraintEnd_toEndOf="@+id/seeMemberTxt"
+			app:layout_constraintStart_toStartOf="@+id/seeMemberTxt"
+			app:layout_constraintTop_toBottomOf="@+id/seeMemberTxt" android:layout_marginTop="150dp"/>
+	<Button
+			android:text="Add member"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/btnSubmitNewMember"
+			app:layout_constraintEnd_toEndOf="@+id/editMemberName"
+			app:layout_constraintStart_toStartOf="@+id/editMemberName"
+			app:layout_constraintTop_toBottomOf="@+id/editMemberName" android:layout_marginTop="12dp"
+			app:layout_constraintHorizontal_bias="0.494"/>
+	<TextView
+			android:text="Budget Members:"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/seeMemberTxt"
+			app:layout_constraintEnd_toEndOf="@+id/btnSubmitNewMember"
+			app:layout_constraintStart_toStartOf="@+id/btnSubmitNewMember"
+			app:layout_constraintTop_toBottomOf="@+id/btnSubmitNewMember" android:layout_marginTop="40dp"
+			android:textSize="18sp"/>
+	<EditText
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:inputType="textPersonName"
+			android:ems="10"
+			android:id="@+id/editBugdetName"
+			app:layout_constraintEnd_toEndOf="@+id/createBudgetTxt"
+			app:layout_constraintStart_toStartOf="@+id/createBudgetTxt"
+			app:layout_constraintTop_toBottomOf="@+id/createBudgetTxt" android:layout_marginTop="48dp"
+			android:hint="Enter bugdet name" app:layout_constraintHorizontal_bias="0.571"/>
+	<TextView
+			android:layout_width="200dp"
+			android:layout_height="wrap_content" android:id="@+id/txtMemberList"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/seeMemberTxt"
+			android:layout_marginTop="10dp" android:textSize="16sp"/>
+	<EditText
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:inputType="textPersonName"
+			android:ems="10"
+			android:id="@+id/editHostName"
+			android:hint="Enter host name" app:layout_constraintEnd_toEndOf="@+id/seeMemberTxt"
+			app:layout_constraintStart_toStartOf="@+id/seeMemberTxt"
+			app:layout_constraintTop_toBottomOf="@+id/seeMemberTxt" android:layout_marginTop="70dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

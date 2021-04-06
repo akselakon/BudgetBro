@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+		android:layout_height="400dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/parent"
+		app:cardCornerRadius="7dp"
+		app:cardElevation="7dp"
+		android:layout_margin="5dp">
+
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+		<TextView
+				android:id="@+id/budgetDescriptionTxt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Payment Description:"
+				android:textStyle="bold"
+				app:layout_constraintEnd_toStartOf="@+id/txtPaymentDescription"
+				app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+				android:layout_marginTop="16dp"/>
+		<TextView
+				android:id="@+id/txtPaymentDescription"
+				android:layout_width="160dp"
+				android:layout_height="wrap_content"
+				android:text="Name of budget here"
+				app:layout_constraintStart_toStartOf="@+id/guideline3" app:layout_constraintTop_toTopOf="parent"
+				android:layout_marginTop="15dp"/>
+		<TextView
+				android:text="Payer:"
+				android:textStyle="bold"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/payerTxt"
+				app:layout_constraintTop_toBottomOf="@+id/budgetDescriptionTxt"
+				app:layout_constraintEnd_toStartOf="@+id/txtPayer" app:layout_constraintStart_toStartOf="parent"
+				android:layout_marginTop="30dp"/>
+
+		<TextView
+				android:text="Host name here"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/txtPayer"
+				app:layout_constraintStart_toStartOf="@+id/guideline3"
+				app:layout_constraintTop_toBottomOf="@+id/txtPaymentDescription" android:layout_marginTop="30dp"/>
+		<TextView
+				android:id="@+id/membersTxt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Members in Payment:"
+				android:textStyle="bold"
+				app:layout_constraintTop_toBottomOf="@+id/payerTxt"
+				app:layout_constraintEnd_toStartOf="@+id/guideline3" app:layout_constraintStart_toStartOf="parent"
+				android:layout_marginTop="20dp"/>
+		<TextView
+				android:id="@+id/txtMembers"
+				android:layout_width="150dp"
+				android:layout_height="wrap_content"
+				android:text="Aksel, Aksel, Aksel, Aksel, Aksel, Aksel, Aksel, Aksel, Aksel, Aksel"
+				app:layout_constraintTop_toBottomOf="@+id/txtPayer"
+				app:layout_constraintStart_toEndOf="@+id/guideline3" android:layout_marginTop="20dp"/>
+		<TextView
+				android:text="Add new member"
+				android:textStyle="bold"
+				android:textColor="@color/GREEN"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/btnAddMember"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/guideline3"
+				app:layout_constraintBottom_toBottomOf="@+id/btnDeleteMember"
+				app:layout_constraintTop_toTopOf="@+id/btnDeleteMember"/>
+
+
+		<TextView
+				android:text="Delete member"
+				android:textStyle="bold"
+				android:textColor="@color/RED"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/btnDeleteMember"
+				app:layout_constraintStart_toStartOf="@+id/guideline3"
+				app:layout_constraintTop_toBottomOf="@+id/txtMembers" android:layout_marginTop="30dp"/>
+
+
+		<TextView
+				android:text="Delete payment"
+				android:textStyle="bold"
+				android:textColor="@color/RED"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/btnDeletePayment"
+				app:layout_constraintTop_toBottomOf="@+id/btnDeleteMember"
+				android:layout_marginTop="28dp" app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"/>
+
+
+		<androidx.constraintlayout.widget.Guideline
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/guideline3"
+				app:layout_constraintGuide_begin="214dp"
+				android:orientation="vertical"/>
+		<androidx.constraintlayout.widget.Guideline
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/guideline5"
+				app:layout_constraintGuide_begin="364dp"
+				android:orientation="vertical"/>
+		<TextView
+				android:text="id:"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/idTxt"
+				app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+				android:layout_marginStart="10dp" android:layout_marginTop="10dp" android:textSize="12sp"/>
+		<TextView
+				android:text="5"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/txtId"
+				android:textSize="12sp" app:layout_constraintStart_toEndOf="@+id/idTxt"
+				app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="10dp"
+				android:layout_marginStart="3dp"/>
+
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
