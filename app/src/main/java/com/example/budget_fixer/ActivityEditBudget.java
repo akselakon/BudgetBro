@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.Collections;
+import java.util.function.ToDoubleBiFunction;
 
 public class ActivityEditBudget extends AppCompatActivity {
 
@@ -29,7 +30,7 @@ public class ActivityEditBudget extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
         adapter.setBudgets(Utils.getInstance().getAllBudgets());
 
-
+        //TODO: Fiks livet
 
     }
 
